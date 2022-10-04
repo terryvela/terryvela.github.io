@@ -282,15 +282,15 @@
    
    var endConversation = function () {
      iframeElem.contentWindow.postMessage({
-      'actionType': 'endConversation',
-      'actionData': true
+      'actionType': 'endConversation'
+      //,'actionData': true
     }, postMessageURL);
    };
    
    var resetConversation = function () {
      iframeElem.contentWindow.postMessage({
-      'actionType': 'resetConversation',
-      'actionData': true
+      'actionType': 'resetConversation'
+      //,'actionData': true
     }, postMessageURL);
    };
    
@@ -314,12 +314,13 @@
   function init () {
     console.log('i should be in here once');
 
-    document.getElementById('receiver').src = 'https://eu.amelia.com/Amelia/ui/ameliaTestCustom/chat?embed=iframe&domainCode=damien';    
-//    document.getElementById('receiver').src = 'https://bnp-v4.dev.amelia.com/Amelia/ui/centricpoc/20/chat?embed=iframe&domainCode=centric_ipsoft_dev';
-//    document.getElementById('receiver').src = 'https://staffmark.dev.amelia.com/Amelia/';
-//         document.getElementById('receiver').src = 'https://ameliav4.dev.amelia.com/Amelia/ui/raul/?domainCode=gateway_test&embed=iframe';
-//     document.getElementById('receiver').src = 'https://onelaw-v4.dev.amelia.com/Amelia/ui/AmeliaCust/?domainCode=onelaw&attrib_urlPath=home-pages'
-    // document.getElementById('receiver').src = 'https://onelaw-v4.dev.amelia.com/Amelia/ui/ClientPortalAvatar/';
+document.getElementById('receiver').src = 'https://bnp.dev.amelia.com/Amelia/ui/custom/chat?embed=iframe&domainCode=lab_test'; 
+// document.getElementById('receiver').src = 'https://eu.amelia.com/Amelia/ui/ameliaTestCustom/chat?embed=iframe&domainCode=damien';    
+// document.getElementById('receiver').src = 'https://bnp-v4.dev.amelia.com/Amelia/ui/centricpoc/20/chat?embed=iframe&domainCode=centric_ipsoft_dev';
+// document.getElementById('receiver').src = 'https://staffmark.dev.amelia.com/Amelia/';
+// document.getElementById('receiver').src = 'https://ameliav4.dev.amelia.com/Amelia/ui/raul/?domainCode=gateway_test&embed=iframe';
+// document.getElementById('receiver').src = 'https://onelaw-v4.dev.amelia.com/Amelia/ui/AmeliaCust/?domainCode=onelaw&attrib_urlPath=home-pages'
+// document.getElementById('receiver').src = 'https://onelaw-v4.dev.amelia.com/Amelia/ui/ClientPortalAvatar/';
     isInit = true;
   }
    
